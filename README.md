@@ -36,3 +36,13 @@ docker ps -q | xargs -r docker stop ; docker system purge -a
 ```shell
 docker rm (docker ps -a |grep [IMAGE_NAME] |awk '{print $1}')
 ```
+
+#### Stop docker compose with special config file:
+```shell
+docker-compose -f [CONFIG_FILE_NAME].yml down -v
+```
+
+#### Rebuild and start docker compose with special config file after that detach it:
+```shell
+docker-compose -f [CONFIG_FILE_NAME].yml up —build -d
+```
