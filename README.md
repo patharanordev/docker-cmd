@@ -44,5 +44,5 @@ docker-compose -f [CONFIG_FILE_NAME].yml down -v
 
 #### Rebuild and start docker compose with special config file after that detach it:
 ```shell
-docker-compose -f [CONFIG_FILE_NAME].yml up —build -d
+docker-compose -f [CONFIG_FILE_NAME].yml up —-build -d
 ```
