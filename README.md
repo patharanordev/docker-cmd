@@ -32,7 +32,7 @@ $ docker ps -q | xargs -r docker stop ; docker system purge -a
 ```
 ###### Note : on macOS using `docker ps -q | xargs docker stop ; docker system prune -a`
 
-#### Remove remove repo/tag is “none”:
+#### Remove image of repo/tag is “none”:
 ```shell
 $ docker rmi $(docker image ls | grep "<none>" | awk '{print $3}')
 ```
